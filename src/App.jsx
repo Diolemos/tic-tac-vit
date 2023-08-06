@@ -13,6 +13,7 @@ const App = () => {
        id={index} 
        go={go}
        setGo={setGo}
+       cells={cells}
        cell={cell} setCells={setCells}/>)}
         <p>{message}</p>
       </div>
