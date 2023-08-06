@@ -5,7 +5,7 @@ const App = () => {
   const [cells, setCells] = useState(["", "", "", "", "", "", "", "", ""]);
   const [go, setGo] = useState("circle");
   const [winningMessage, setWinningMessage] = useState(null);
-  const message = " " + go + " turn";
+  const message = go=="circle"?"Coca-cola":"Dolly" 
   console.log(cells);
 
   const checkScore = () => {
@@ -33,9 +33,9 @@ const App = () => {
     }
 
     if (circleWins) {
-      setWinningMessage("Circle Wins!");
+      setWinningMessage("Coca Cola Venceu!");
     } else if (crossWins) {
-      setWinningMessage("Cross Wins!");
+      setWinningMessage("Dollinho venceu!");
     }
   };
 
@@ -45,6 +45,7 @@ const App = () => {
 
   return (
     <div className="app">
+         <h1>{winningMessage || message}</h1>
       <div className="gameboard">
         {cells.map((cell, index) => (
           <Cell
@@ -58,7 +59,7 @@ const App = () => {
             winningMessege={winningMessage}
           />
         ))}
-        <p>{winningMessage || message}</p>
+        
       </div>
     </div>
   );
