@@ -1,6 +1,14 @@
+import Cell from "./Components/Cell"
+
 const App = ()=>{
   return(
-    <div className="app"></div>
+    <div className="app">
+      <div className="gameboard" >
+      <Cell/>
+      <p>aslkfjsdf</p>
+      </div>
+     
+    </div>
   )
 }
 
