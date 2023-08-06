@@ -1,4 +1,4 @@
-const Cell = ({id,cell,cells, setCells, go, setGo})=>{
+const Cell = ({id,cell,cells, setCells, go, setGo, winningMessege})=>{
 
 const handleClick = (e)=>{
  const taken = e.target.firstChild.classList.contains("circle") ||
@@ -30,7 +30,7 @@ const nextCelss = cells.map((cell,index)=>{
     return(
         <div className="square" 
         id={id} 
-        onClick={handleClick}>
+        onClick={!winningMessege && handleClick}>
            <div className={cell}></div>
         </div>
     )

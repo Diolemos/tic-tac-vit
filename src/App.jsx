@@ -55,6 +55,7 @@ const App = () => {
             cells={cells}
             cell={cell}
             setCells={setCells}
+            winningMessege={winningMessage}
           />
         ))}
         <p>{winningMessage || message}</p>
