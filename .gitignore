@@ -6,6 +6,13 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+/media/pedro/ext/Projects/august23/tic-tac-vite/node_modules
+/media/pedro/ext/Projects/august23/tic-tac-vite/package.json
+/media/pedro/ext/Projects/august23/tic-tac-vite/package-lock.json
+/media/pedro/ext/Projects/august23/tic-tac-vite/public
+/media/pedro/ext/Projects/august23/tic-tac-vite/README.md
+/media/pedro/ext/Projects/august23/tic-tac-vite/src
+/media/pedro/ext/Projects/august23/tic-tac-vite/vite.config.js
 
 node_modules
 dist
