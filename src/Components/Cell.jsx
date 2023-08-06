@@ -1,7 +1,13 @@
-const Cell = ()=>{
+const Cell = ({id,cell})=>{
+
+const handleClick = ()=>{
+    
+}
+
+
 
     return(
-        <div className="sqare"></div>
+        <div className="square" id={id} onClick={handleClick}></div>
     )
 }
 
